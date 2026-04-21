@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8" />
 
-    <!-- RESPONSIVIDADE -->
+    <!-- Responsividade -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- SEO -->
-    <title>Simulador de Financiamento Veicular | Calcule antes de financiar</title>
-    <meta name="description" content="Simule financiamento veicular com juros, parcelas, IPVA e seguro. Descubra o custo real antes de fechar negócio." />
-    <meta name="keywords" content="financiamento veicular, simulador de financiamento, juros de carro, parcelas de financiamento" />
-    <meta name="author" content="Seu Nome ou Empresa" />
+    <title>Simulador de Financiamento Veicular</title>
+    <meta name="description" content="Simule financiamento veicular com juros, parcelas, IPVA e seguro." />
+    <meta name="keywords" content="financiamento veicular, simulador, juros de carro" />
+    <meta name="author" content="Seu Nome" />
 
-    <!-- FAVICON -->
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -24,21 +24,20 @@
 <main class="container">
     <h1>🚗 Simulador de Financiamento</h1>
 
-    <form id="form" aria-label="Simulador de financiamento veicular">
-        <input type="number" id="valor" placeholder="Valor do veículo" required min="0">
-        <input type="number" id="entrada" placeholder="Entrada" required min="0">
-        <input type="number" id="taxa" placeholder="Taxa de juros (% ao mês)" required min="0">
-        <input type="number" id="prazo" placeholder="Prazo (meses)" required min="1">
-        <input type="number" id="seguro" placeholder="Seguro anual" min="0">
-        <input type="number" id="ipva" placeholder="IPVA anual" min="0">
-
+    <form id="form">
+        <input type="number" id="valor" placeholder="Valor do veículo" required>
+        <input type="number" id="entrada" placeholder="Entrada" required>
+        <input type="number" id="taxa" placeholder="Taxa de juros (% ao mês)" required>
+        <input type="number" id="prazo" placeholder="Prazo (meses)" required>
+        <input type="number" id="seguro" placeholder="Seguro anual">
+        <input type="number" id="ipva" placeholder="IPVA anual">
         <button type="submit">Calcular</button>
     </form>
 
-    <section id="resultado" class="resultado" aria-live="polite" hidden></section>
+    <section id="resultado" class="resultado" hidden></section>
 </main>
 
-<!-- JS -->
+<!-- JavaScript -->
 <script src="js/script.js" defer></script>
 
 </body>
